@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: nodered
+  name: nodered
+  labels:
+    app: nodered
+spec:
+  selector:
+    matchLabels:
+      app: nodered
+  template:
+    metadata:
+      labels:
+        app: nodered
+    spec:
+      containers:
+        - name: nodered
+          image: nodered/node-red:latest-12     
+          ports:
+            - containerPort: 1880
+              name: nodered
+          resources:
+            limits:
+              cpu: 200m
+              memory: 1Gi
+            requests:
+              cpu: 50m
+              memory: 256Mi          
+      
+       
