@@ -9,6 +9,5 @@ spec:
   ports:
     - protocol: TCP      
       port: 1880
-      targetPort: 1880
-      nodePort: 32008
-  type: NodePort
+      targetPort: 1880     
+  type: ClientIP
