@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  nodered:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2021-12-15T12:39:03.022555527Z"
+    description: Applications
+    digest: d8b51fbd5e83607f95720654737c4b076b3c2bbe053087fd5b6b9243bea2717e
+    name: nodered
+    type: application
+    urls:
+    - https://github.com/naimo84/helm-charts/releases/download/nodered-1.0.0/nodered-1.0.0.tgz
+    version: 1.0.0
+generated: "2021-12-15T12:39:03.022562027Z"
