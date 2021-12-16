@@ -1,5 +1,30 @@
 apiVersion: v1
 entries:
+  node-red:
+  - apiVersion: v2
+    appVersion: 2.1.4
+    created: "2021-12-16T05:21:22.225253335Z"
+    description: A Helm chart for Node-Red, a low-code programming for event-driven
+      applications
+    digest: 72662a81dcdb6b05ca1454dd8f43d3e40de38d1fe83250326a8a45c5a42a8bf9
+    home: https://nodered.org/
+    icon: https://nodered.org/about/resources/media/node-red-icon-2.png
+    keywords:
+    - node-red
+    - iot
+    - home
+    - automation
+    maintainers:
+    - email: git@naimo84.dev
+      name: naimo84
+      url: https://naimo84.dev
+    name: node-red
+    sources:
+    - https://github.com/naimo84/helm-charts
+    type: application
+    urls:
+    - https://github.com/naimo84/helm-charts/releases/download/node-red-1.0.0/node-red-1.0.0.tgz
+    version: 1.0.0
   nodered:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -11,4 +36,4 @@ entries:
     urls:
     - https://github.com/naimo84/helm-charts/releases/download/nodered-1.0.0/nodered-1.0.0.tgz
     version: 1.0.0
-generated: "2021-12-15T12:39:03.022562027Z"
+generated: "2021-12-16T05:21:22.225269436Z"
