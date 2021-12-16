@@ -1,6 +1,24 @@
 apiVersion: v2
-name: "nodered"
-description: Applications
+name: node-red
+description: A Helm chart for Node-Red, a low-code programming for event-driven applications
+home: https://nodered.org/
+sources:
+  - https://github.com/naimo84/helm-charts
+
+icon: https://nodered.org/about/resources/media/node-red-icon-2.png
+
 type: application
+
 version: 1.0.0
-appVersion: "1.0.0"
+appVersion: "2.1.4"
+
+keywords:
+  - node-red
+  - iot
+  - home
+  - automation
+
+maintainers:
+  - name: naimo84
+    email: git@naimo84.dev
+    url: https://naimo84.dev

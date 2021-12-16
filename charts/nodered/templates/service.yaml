@@ -1,13 +1,15 @@
 apiVersion: v1
 kind: Service
 metadata:
-  namespace: nodered
-  name: nodered
+  name: {{ include "node-red.fullname" . }}
+  labels:
+    {{- include "node-red.labels" . | nindent 4 }}
 spec:
-  selector:
-    app: nodered
+  type: {{ .Values.service.type }}
   ports:
-    - protocol: TCP      
-      port: 1880
-      targetPort: 1880     
-  type: ClientIP
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "node-red.selectorLabels" . | nindent 4 }}
