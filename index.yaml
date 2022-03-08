@@ -100,6 +100,21 @@ entries:
   trilium-notes:
   - apiVersion: v2
     appVersion: 0.50.2
+    created: "2022-03-08T14:57:39.536106577Z"
+    description: A Helm chart for trillium notes.
+    digest: d717922805dd7a035cf9f1e8b014646b2549ee30886f10c2c4f09b5e1d6f211f
+    maintainers:
+    - name: ohdearaugustin
+      url: https://github.com/ohdearaugustin
+    - name: naimo84
+      url: https://github.com/naimo84
+    name: trilium-notes
+    type: application
+    urls:
+    - https://github.com/naimo84/helm-charts/releases/download/trilium-notes-0.1.4/trilium-notes-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 0.50.2
     created: "2022-03-08T14:34:48.155198317Z"
     description: A Helm chart for trillium notes.
     digest: f64ae83ab1ef528d59a09b75bd6bef0eb8e7b7ec6f1707a950b7b4194b03f4d6
@@ -158,4 +173,4 @@ entries:
     urls:
     - https://github.com/naimo84/helm-charts/releases/download/trilium-notes-0.1.0/trilium-notes-0.1.0.tgz
     version: 0.1.0
-generated: "2022-03-08T14:34:48.155371618Z"
+generated: "2022-03-08T14:57:39.536136778Z"
