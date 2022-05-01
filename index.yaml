@@ -100,6 +100,19 @@ entries:
   tandoor-recipes:
   - apiVersion: v2
     appVersion: 1.1.2
+    created: "2022-05-01T10:31:55.652655599Z"
+    description: A Helm chart for Tandoor Recipes.
+    digest: 845ec030597673516a128fb67e7608e090ca2fa18a1fd158f61a98a0fe3db671
+    maintainers:
+    - name: naimo84
+      url: https://github.com/naimo84
+    name: tandoor-recipes
+    type: application
+    urls:
+    - https://github.com/naimo84/helm-charts/releases/download/tandoor-recipes-0.1.1/tandoor-recipes-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.1.2
     created: "2022-03-09T18:52:39.694731391Z"
     description: A Helm chart for Tandoor Recipes.
     digest: 2b74d17cea7b2b2c29ec690db98f20687c7c7033ce7f61b67fe0428f1c51a93d
@@ -187,4 +200,4 @@ entries:
     urls:
     - https://github.com/naimo84/helm-charts/releases/download/trilium-notes-0.1.0/trilium-notes-0.1.0.tgz
     version: 0.1.0
-generated: "2022-03-09T18:52:39.694761191Z"
+generated: "2022-05-01T10:31:55.652680999Z"
