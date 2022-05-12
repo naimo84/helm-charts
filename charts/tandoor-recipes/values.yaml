@@ -8,7 +8,10 @@ image:
   repository: vabene1111/recipes
   tag: ""
   pullPolicy: IfNotPresent
-
+  
+extraEnvs: 
+  - name: DEBUG
+    value: "0"
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""

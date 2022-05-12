@@ -150,8 +150,7 @@ spec:
             # mount as subPath due to lost+found on ext4 pvc
             subPath: files
         env:
-          - name: DEBUG
-            value: "0"
+          {{ toYaml .Values.extraEnvs | nindent 10 }}          
           - name: ALLOWED_HOSTS
             value: '*'
           - name: SECRET_KEY
