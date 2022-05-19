@@ -4,7 +4,7 @@ appVersion: 1.2.0
 description: A Helm chart for Tandoor Recipes.
 name: tandoor-recipes
 type: application
-version: 0.1.3
+version: 0.1.4
 maintainers:
   - name: naimo84
     url: https://github.com/naimo84

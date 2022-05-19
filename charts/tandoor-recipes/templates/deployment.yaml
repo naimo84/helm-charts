@@ -141,6 +141,7 @@ spec:
             cpu: 250m
             memory: 64Mi
         volumeMounts:
+          {{ toYaml .Values.extraVolumeMounts | nindent 10 }}
           - mountPath: /opt/recipes/mediafiles
             name: media
             # mount as subPath due to lost+found on ext4 pvc
@@ -148,7 +149,7 @@ spec:
           - mountPath: /opt/recipes/staticfiles
             name: static
             # mount as subPath due to lost+found on ext4 pvc
-            subPath: files
+            subPath: files            
         env:
           {{ toYaml .Values.extraEnvs | nindent 10 }}          
           - name: ALLOWED_HOSTS
@@ -176,6 +177,7 @@ spec:
         securityContext:
           runAsUser: 65534
       volumes:
+        {{ toYaml .Values.extraVolumes | nindent 10 }}
         - name: media
           persistentVolumeClaim:
             claimName: recipes-media
