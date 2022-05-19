@@ -177,7 +177,7 @@ spec:
         securityContext:
           runAsUser: 65534
       volumes:
-        {{ toYaml .Values.extraVolumes | nindent 10 }}
+        {{ toYaml .Values.extraVolumes | nindent 8 }}
         - name: media
           persistentVolumeClaim:
             claimName: recipes-media
