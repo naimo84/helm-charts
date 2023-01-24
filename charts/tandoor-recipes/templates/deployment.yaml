@@ -154,8 +154,7 @@ spec:
             subPath: files            
         env:
           {{ toYaml .Values.extraEnvs | nindent 10 }}          
-          - name: ALLOWED_HOSTS
-            value: '*'
+          
           - name: SECRET_KEY
             valueFrom:
               secretKeyRef:
