@@ -21,6 +21,20 @@ entries:
     urls:
     - https://github.com/naimo84/helm-charts/releases/download/datree-admission-webhook-0.3.36/datree-admission-webhook-0.3.36.tgz
     version: 0.3.36
+  microbin:
+  - apiVersion: v2
+    appVersion: "1.2"
+    created: "2023-04-13T07:14:36.485791669Z"
+    description: A Helm chart for microbin notes.
+    digest: a650c1907e87e3167de2ca7390dd30cfb98ab8fd37eabd1ece1ca32df47fb3d1
+    maintainers:
+    - name: naimo84
+      url: https://github.com/naimo84
+    name: microbin
+    type: application
+    urls:
+    - https://github.com/naimo84/helm-charts/releases/download/microbin-0.1.0/microbin-0.1.0.tgz
+    version: 0.1.0
   node-red:
   - apiVersion: v2
     appVersion: 2.2.0
@@ -299,4 +313,4 @@ entries:
     urls:
     - https://github.com/naimo84/helm-charts/releases/download/trilium-notes-0.1.0/trilium-notes-0.1.0.tgz
     version: 0.1.0
-generated: "2023-02-14T18:52:56.970205603Z"
+generated: "2023-04-13T07:14:36.486036771Z"
