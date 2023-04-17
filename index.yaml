@@ -24,6 +24,19 @@ entries:
   microbin:
   - apiVersion: v2
     appVersion: "1.2"
+    created: "2023-04-17T09:07:26.311219641Z"
+    description: A Helm chart for microbin notes.
+    digest: 7949ebc1fd22af6f55364b71ab0dbb8b2a1f83a3153253ca429d2ccb55c8a247
+    maintainers:
+    - name: naimo84
+      url: https://github.com/naimo84
+    name: microbin
+    type: application
+    urls:
+    - https://github.com/naimo84/helm-charts/releases/download/microbin-0.1.4/microbin-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: "1.2"
     created: "2023-04-17T06:48:14.376255655Z"
     description: A Helm chart for microbin notes.
     digest: 2970771d707658d7818e8fae278ff239a3209d4fbf84305cc81ded48510b0494
@@ -352,4 +365,4 @@ entries:
     urls:
     - https://github.com/naimo84/helm-charts/releases/download/trilium-notes-0.1.0/trilium-notes-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-17T06:48:14.376337756Z"
+generated: "2023-04-17T09:07:26.311269841Z"
