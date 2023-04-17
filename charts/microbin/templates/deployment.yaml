@@ -45,6 +45,10 @@ spec:
           volumeMounts:
             - name: microbin-data
               mountPath: "{{ .Values.dataDir }}"
+          {{ if .Values.env }}
+          env: 
+            {{- toYaml .Values.env | nindent 12 }}            
+          {{ end }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
