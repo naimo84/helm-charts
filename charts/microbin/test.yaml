@@ -1,0 +1,24 @@
+env:
+  - name: MICROBIN_PRIVATE
+    value: "true"
+  - name: MICROBIN_PUBLIC_PATH
+    value: "https://microbin.naimo84.dev"
+  - name: MICROBIN_EDITABLE
+    value: "true"
+  - name: MICROBIN_ENABLE_BURN_AFTER
+    value: "true"
+  - name: MICROBIN_QR
+    value: "true"
+  - name: MICROBIN_HIGHLIGHTSYNTAX
+    value: "true"
+  - name: MICROBIN_TITLE
+    value: "Microbin"
+  - name: MICROBIN_HIDE_FOOTER
+    value: "true"
+persistentVolume:
+  enabled: true
+  storageClass: nfs-storageclass
+ingress:
+  enabled: true          
+  hosts:
+    - host: microbin.naimo84.dev

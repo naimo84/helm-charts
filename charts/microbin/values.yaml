@@ -38,8 +38,7 @@ dataDir: /srv/microbin-data
 
 persistentVolume:
   enabled: false
-  accessModes:
-    - ReadWriteOnce
+  accessMode: ReadWriteOnce
   annotations: {}
   size: 2Gi
 

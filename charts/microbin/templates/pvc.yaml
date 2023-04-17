@@ -1,0 +1,24 @@
+{{- if and .Values.persistentVolume.enabled (not .Values.persistentVolume.existingClaim) }}
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: {{ template "microbin.fullname" . }}
+  labels:
+    app.kubernetes.io/name: {{ include "microbin.name" . }}
+    helm.sh/chart: {{ include "microbin.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+spec:
+  accessModes:
+    - {{ .Values.persistentVolume.accessMode | quote }}
+  resources:
+    requests:
+      storage: {{ .Values.persistentVolume.size | quote }}
+  {{- if .Values.persistentVolume.storageClass }}
+    {{- if (eq "-" .Values.persistentVolume.storageClass) }}
+  storageClassName: ""
+    {{- else }}
+  storageClassName: "{{ .Values.persistentVolume.storageClass }}"
+    {{- end }}
+  {{- end }}
+{{- end -}}

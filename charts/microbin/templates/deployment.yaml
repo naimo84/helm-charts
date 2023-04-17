@@ -63,29 +63,13 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
     {{- end }}
-{{- if .Values.persistentVolume.enabled }}
-  volumeClaimTemplates:
-    - metadata:
-        name: microbin-data
-        {{- if .Values.persistentVolume.annotations }}
-        annotations:
-{{ toYaml .Values.persistentVolume.annotations | indent 10 }}
-        {{- end }}
-      spec:
-        accessModes:
-{{ toYaml .Values.persistentVolume.accessModes | indent 10 }}
-        resources:
-          requests:
-            storage: "{{ .Values.persistentVolume.size }}"
-      {{- if .Values.persistentVolume.storageClass }}
-      {{- if (eq "-" .Values.persistentVolume.storageClass) }}
-        storageClassName: ""
-      {{- else }}
-        storageClassName: "{{ .Values.persistentVolume.storageClass }}"
-      {{- end }}
-      {{- end }}
-{{- else }}
       volumes:
         - name: microbin-data
+          {{- if .Values.persistentVolume.enabled }}
+          persistentVolumeClaim:
+            claimName: {{ if .Values.persistentVolume.existingClaim }}{{ .Values.persistentVolume.existingClaim }}{{- else }}{{ template "microbin.fullname" . }}{{- end }}
+          {{- else }}
           emptyDir: {}
-{{- end }}
+          {{ end }}
+
+
