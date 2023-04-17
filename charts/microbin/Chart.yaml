@@ -4,7 +4,7 @@ appVersion: 1.2
 description: A Helm chart for microbin notes.
 name: microbin
 type: application
-version: 0.1.1
+version: 0.1.2
 maintainers: 
   - name: naimo84
     url: https://github.com/naimo84
